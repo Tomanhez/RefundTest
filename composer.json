@@ -18,6 +18,7 @@
         "php": "^7.3",
         "friendsofsymfony/oauth-server-bundle": ">2.0.0-alpha.0 ^2.0@dev",
         "sylius/paypal-plugin": "^1.1",
+        "sylius/refund-plugin": "dev-add-refund-type-interface",
         "sylius/sylius": "~1.9.0",
         "symfony/dotenv": "^4.4 || ^5.2",
         "symfony/flex": "^1.11"
@@ -91,5 +92,11 @@
         "symfony": {
             "allow-contrib": false
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/Tomanhez/RefundPlugin"
+        }
+    ]
 }

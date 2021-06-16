@@ -7,9 +7,11 @@ imports:
 
     - { resource: "@SyliusShopBundle/Resources/config/app/config.yml" }
     - { resource: "@SyliusPayPalPlugin/Resources/config/config.yaml" }
+    - { resource: "@SyliusRefundPlugin/Resources/config/app/config.yml" }
 
 parameters:
     sylius_core.public_dir: '%kernel.project_dir%/public'
+    sylius_refund.refund_enum_type: App\Entity\Type\RefundEnumType
 
 sylius_addressing:
     resources:
